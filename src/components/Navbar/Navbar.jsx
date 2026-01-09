@@ -21,8 +21,8 @@ const Navbar = ({ theme, setTheme }) => {
     <div className="relative z-10 shadow-md w-full dark:bg-black dark:text-white duration-300 py-4">
       <div className="container mx-auto px-6 sm:px-8 md:px-10">
         <div className="flex justify-between items-center">
-          <div>
-            <span className="text-3xl font-bold font-serif">SRI GANESH TRAVEL HUB</span>
+          <div className="ml-6">
+            <span className="text-3xl font-bold font-serif">SRI GANESH TAXI SERICES</span>
             <h3 className="tagline text-xl"> Your Journey Our Passion</h3>
           </div>
 
