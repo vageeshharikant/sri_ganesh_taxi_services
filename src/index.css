@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.tagline {
+  font-family: 'Great Vibes', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .link {
+    @apply cursor-pointer hover:underline;
+  }
+  .button-outline {
+    @apply rounded-md border-2 border-primary hover:bg-primary/80 hover:text-black duration-500 py-2 px-6 text-primary tracking-wider;
+  }
+}
