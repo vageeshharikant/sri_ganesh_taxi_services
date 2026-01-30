@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import { Link } from "react-scroll";
@@ -18,7 +18,7 @@ const Navbar = ({ theme, setTheme }) => {
   };
 
   return (
-    <div className="relative z-10 shadow-md w-full dark:bg-black dark:text-white duration-300 py-4">
+    <div className="relative z-10 shadow-md w-full dark:bg-gray-900 dark:text-white duration-300 py-4">
       <div className="container mx-auto px-6 sm:px-8 md:px-10">
         <div className="flex justify-between items-center">
           <div className="ml-6">
