@@ -53,7 +53,7 @@ const Contact = () => {
                   const message = e.target.message.value;
                   
                   // Construct mailto link
-                  const mailtoLink = `mailto:support@example.com?subject=Enquiry from ${name}&body=Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0A%0AMessage:%0A${message}`;
+                  const mailtoLink = `mailto:sriganeshtaxiservices@gmail.com?subject=Enquiry from ${name}&body=Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0A%0AMessage:%0A${message}`;
 
                   // Open mail client
                   window.location.href = mailtoLink;
