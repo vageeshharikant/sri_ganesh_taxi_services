@@ -64,12 +64,12 @@ const CarList = () => {
                 </div>
                 <div className="space-y-2">
                   <h1 className="text-primary font-semibold">{data.name}</h1>
-                  <div className="flex justify-between items-center text-xl font-semibold">
+                  <div className="flex justify-between items-center text-xl font-semibold text-black dark:text-white">
                     <p>Rs {data.price}/Day</p>
                     <a href="#">Details</a>
                   </div>
                 </div>
-                <p className="text-xl font-semibold absolute top-0 left-3">
+                <p className="text-xl font-semibold absolute top-0 left-3 text-black dark:text-white">
                   250Km/day
                 </p>
               </div>
