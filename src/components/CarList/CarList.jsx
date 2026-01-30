@@ -1,31 +1,30 @@
-import React from "react";
 import car4 from "../../assets/black-etios.png";
-import whiteCar from "../../assets/tavera-n.png";
+import innova from "../../assets/innova.png";
 import car3 from "../../assets/white-ertiga.png";
 import car2 from "../../assets/white_swift.png";
 
 const carList = [
   {
     name: "Etios",
-    price: 3500,
+    price: 3300,
     image: car4,
     aosDelay: "1000",
   },
   {
-    name: "Tavera",
-    price: 5000,
-    image: whiteCar,
+    name: "Innova",
+    price: 5500,
+    image: innova,
     aosDelay: "0",
   },
   {
     name: "Swift",
-    price: 3500,
+    price: 3300,
     image: car2,
     aosDelay: "500",
   },
   {
     name: "Ertiga",
-    price: 5000,
+    price: 4500,
     image: car3,
     aosDelay: "1000",
   },
@@ -71,7 +70,7 @@ const CarList = () => {
                   </div>
                 </div>
                 <p className="text-xl font-semibold absolute top-0 left-3">
-                  300Km/day
+                  250Km/day
                 </p>
               </div>
             ))}
