@@ -18,11 +18,18 @@ const Navbar = ({ theme, setTheme }) => {
   };
 
   return (
+
     <div className="relative z-10 shadow-md w-full dark:bg-gray-900 dark:text-white duration-300 py-4">
       <div className="container mx-auto px-6 sm:px-8 md:px-10">
         <div className="flex justify-between items-center">
-          <div className="ml-6">
-            <span className="text-3xl font-bold font-serif">SRI GANESH TAXI SERVICES</span>
+          <div className="top-ticker">
+          <div className="w-full overflow-hidden bg-blue-600 h-8 flex items-center">
+           <p className="whitespace-nowrap animate-marquee text-white text-sm font-medium">
+              🚕 Find your best taxi at Murdeshwar • 24/7 Service • Local & Outstation Cabs
+           </p>
+          </div>
+
+            <span className="text-3xl font-bold font-serif">SRI GANESH TAXI SERVICES MURDESHWAR</span>
             <h3 className="tagline text-xl"> Your Journey Our Passion</h3>
           </div>
 
