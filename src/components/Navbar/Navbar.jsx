@@ -25,7 +25,7 @@ const Navbar = ({ theme, setTheme }) => {
           <div className="top-ticker">
           <div className="w-screen bg-blue-600 h-8 flex items-center overflow-hidden">
              <div className="animate-marquee whitespace-nowrap text-white text-sm font-medium">
-             🚕 Find your best taxi at Murdeshwar • 24/7 Service • Local & Outstation Cabs
+             • Find your best taxi at Murdeshwar             • 24/7 Service              • Local & Outstation Cabs
              </div>
             </div>
 
