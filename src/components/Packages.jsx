@@ -31,7 +31,7 @@ const packagesData = [
 ];
 
 // Your contact email
-const email = "sriganeshtaxiservices@gmail.com"; // Replace with actual email
+const email = "sriganeshtaxiservices@gmail.com"; 
 
 const Packages = () => {
   // Function to open email client with subject and body pre-filled
