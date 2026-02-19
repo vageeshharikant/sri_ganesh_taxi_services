@@ -30,25 +30,25 @@ const Navbar = ({ theme, setTheme }) => {
       • Find your best taxi at Murdeshwar
     </span>
 
-    <span className="mx-8 text-yellow-300 font-bold">|</span>
+    <span className="mx-6 text-white">|</span>
 
-    <span className="text-sky-200">
+    <span className="text-white">
       • 24/7 Service
     </span>
 
-    <span className="mx-8 text-yellow-300 font-bold">|</span>
+    <span className="mx-6 text-white">|</span>
 
     <span className="text-white">
       • Local & Outstation Cabs
     </span>
-    <span className="mx-6 text-yellow-300 font-bold">|</span>
+    <span className="mx-6 text-white">|</span>
 
-    <span className="text-sky-200">
+    <span className="text-white">
       Airport Pickup
     </span>
-    <span className="mx-6 text-yellow-300 font-bold">|</span>
+    <span className="mx-6 text-white">|</span>
 
-    <span className="text-sky-200">
+    <span className="text-white">
       Affordable Prices
     </span>
 
