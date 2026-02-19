@@ -41,6 +41,16 @@ const Navbar = ({ theme, setTheme }) => {
     <span className="text-white">
       • Local & Outstation Cabs
     </span>
+    <span className="mx-6 text-yellow-300 font-bold">|</span>
+
+    <span className="text-sky-200">
+      Airport Pickup
+    </span>
+    <span className="mx-6 text-yellow-300 font-bold">|</span>
+
+    <span className="text-sky-200">
+      Affordable Prices
+    </span>
 
   </div>
 </div>
