@@ -18,53 +18,38 @@ const Navbar = ({ theme, setTheme }) => {
   };
 
   return (
+    <div className="relative z-10 shadow-md w-full dark:bg-gray-900 dark:text-white duration-300">
+      
+      {/* Top Notification Ticker (Moved to the very top) */}
+      <div className="w-full bg-blue-600 h-8 flex items-center overflow-hidden">
+        <div className="animate-marquee inline-block whitespace-nowrap text-sm font-medium">
+          <span className="text-white">• Find your best taxi at Murdeshwar</span>
+          <span className="mx-6 text-white">|</span>
+          <span className="text-white">• 24/7 Service</span>
+          <span className="mx-6 text-white">|</span>
+          <span className="text-white">• Local & Outstation Cabs</span>
+          <span className="mx-6 text-white">|</span>
+          <span className="text-white">Airport Pickup</span>
+          <span className="mx-6 text-white">|</span>
+          <span className="text-white">Affordable Prices</span>
+        </div>
+      </div>
 
-    <div className="relative z-10 shadow-md w-full dark:bg-gray-900 dark:text-white duration-300 py-4">
-      <div className="container mx-auto px-6 sm:px-8 md:px-10">
+      {/* Main Navigation Bar */}
+      <div className="container mx-auto px-6 sm:px-8 md:px-10 py-4">
         <div className="flex justify-between items-center">
+          
+          {/* Logo / Brand Name */}
           <div className="top-ticker">
-         <div className="w-screen bg-blue-600 h-8 flex items-center overflow-hidden">
-  <div className="animate-marquee whitespace-nowrap text-sm font-medium">
-    
-    <span className="text-white">
-      • Find your best taxi at Murdeshwar
-    </span>
-
-    <span className="mx-6 text-white">|</span>
-
-    <span className="text-white">
-      • 24/7 Service
-    </span>
-
-    <span className="mx-6 text-white">|</span>
-
-    <span className="text-white">
-      • Local & Outstation Cabs
-    </span>
-    <span className="mx-6 text-white">|</span>
-
-    <span className="text-white">
-      Airport Pickup
-    </span>
-    <span className="mx-6 text-white">|</span>
-
-    <span className="text-white">
-      Affordable Prices
-    </span>
-
-  </div>
-</div>
-
-
-            <span className="text-3xl font-bold font-serif">SRI GANESH TAXI SERVICES MURDESHWAR</span>
-            <h3 className="tagline text-xl"> Your Journey Our Passion</h3>
+            <span className="text-xl md:text-3xl font-bold font-serif">SRI GANESH TAXI SERVICES</span>
+            <h3 className="tagline text-sm md:text-xl">Your Journey Our Passion</h3>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
             <ul className="flex items-center gap-8">
               {Navlinks.map(({ id, name, link }) => (
-                <li key={id} className="py-4">
+                <li key={id}>
                   <Link
                     to={link}
                     smooth={true}
@@ -90,9 +75,8 @@ const Navbar = ({ theme, setTheme }) => {
             </ul>
           </nav>
 
-          {/* Mobile View */}
+          {/* Mobile View Toggle Buttons */}
           <div className="flex items-center gap-4 md:hidden">
-            {/* Dark Mode Toggle */}
             {theme === "dark" ? (
               <BiSolidSun
                 onClick={() => setTheme("light")}
@@ -104,7 +88,6 @@ const Navbar = ({ theme, setTheme }) => {
                 className="text-2xl cursor-pointer"
               />
             )}
-            {/* Mobile Hamburger Menu Icon */}
             {showMenu ? (
               <HiMenuAlt1
                 onClick={toggleMenu}
